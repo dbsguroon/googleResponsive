@@ -1,10 +1,173 @@
 /*  Google Web Fonts  */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-    color: #222;
-    line-height: 1.6em;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+}
+
+/* common css */
+section {
+  clear: both;
+}
+
+section .inner {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+section:nth-of-type(even) {
+  background-color: #fafafa;
+}
+
+.download-spec a {
+  display: block;
+  background-color: dodgerblue;
+  width: 170px;
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
+.download-spec span {
+  display: block;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.gotoTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.gotoTop a {
+  display: block;
+  border: 1px solid lightgray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.3s;
+  color: #000;
+}
+
+.gotoTop a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header Area*/
+header {
+  background-color: crimson;
+  height: 90px;
+  line-height: 90px;
+  position: fixed;
+  width: 100%;
+}
+
+header nav {
+  width: 1100px;
+  margin: auto;
+}
+
+header .logo {
+  float: left;
+  padding-top: 20px;
+}
+
+header .logo img {
+  height: 45px;
+}
+
+header .navi {
+  float: right;
+}
+
+header .navi a {
+  text-decoration: none;
+  color: #fff;
+  font-style: 16px;
+  margin: 7px;
+}
+
+/* section welcome*/
+
+section.welcome {
+  padding: 80px 0;
+}
+
+section.welcome h1 {
+  font-style: 46px;
+  font-weight: normal;
+}
+
+section.welcome img {
+  margin-top: 20px;
+}
+
+/* section Useage*/
+
+section.useage .sub-inner {
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+section.useage .sub-inner > div {
+  float: left;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+/* section continue */
+
+section.continue p {
+  width: 800px;
+  margin: auto;
+}
+
+section.continue img {
+  margin-top: 50px;
+}
+
+/* section create */
+
+section.create p {
+  width: 800px;
+  margin: auto;
+}
+
+section.create img {
+  margin-top: 50px;
+}
+
+/* section download */
+
+section.download {
+  padding-top: 80px;
+}
+
+section.download .inner div {
+  display: inline-block;
+  height: 400px;
+  vertical-align: middle;
 }
