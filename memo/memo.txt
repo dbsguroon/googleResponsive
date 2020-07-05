@@ -86,3 +86,49 @@ $.scrollTo(this.hash || 0, 1000);
 즉 슬라이딩 시간을 넣는부분임 참고바람
 
 -----------------------------------------------------------------------------------------
+
+반응형들어가기전에
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,
+maximum-scale=1.0,minimum-scale=1.0" />
+
+메타태그를 넣어주어야한다.
+
+inner라고 만들 클래스에
+px로 고정시켜놓았기떄문에 모바일로 갈때 %로바꿀필요가 있음
+width:100% 로 써주어야함
+
+sub-inner 안에
+가로로 두개 박스가 있는것을 세로박스로 만들어야될떄
+
+float:left 인경우
+
+float:none; 을해주고
+width:100%;
+
+display:inline-block 인경우
+
+display:block 을 해주고
+width:100%;
+
+------------------------------------------------
+
+img 나 글자의 높이를 조절하는법
+
+margin-top 으로 위로가게하고 싶으면 -
+아래로 하고싶으면 + 를주면 된다
+
+만약 margin-top을주어도 잘안먹으면
+그주위에 padding 이 있는지 확인해보고
+없애주어야 한다.
+
+------------------------------------------------
+
+가상요소 content 안에 font-awesome 넣는법
+
+Unicode: f105  -> 유니코드라고 되어있는 코드를 넣어주면됨
+
+content :'\f105'  -> 역슬래시넣고 유니코드 써줌
+font-family : fontawesome   -> fontawesome 이라고 font family를 밝혀주어야함
+
+
+-----------------------------------------------------------

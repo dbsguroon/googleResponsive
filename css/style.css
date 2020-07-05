@@ -109,6 +109,15 @@ header .navi a {
   margin: 7px;
 }
 
+
+header .navi a:before {
+  content: '\f105';
+  font-family: fontawesome;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #999;
+}
+
 /* section welcome*/
 
 section.welcome {
@@ -211,4 +220,108 @@ footer .copyright {
   height: 50px;
   font-size: 13px;
   line-height: 50px;
+}
+
+
+/* 트리거를 pc상태에서 안보이게 해주기 */
+
+.trigger {
+  display: none;
+}
+
+/* Media Queries */
+
+@media(max-width:768px) {
+  header {
+    height: 50px;
+    line-height: 35px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header .navi {
+    background-color: #000;
+    float: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  header .navi.active {
+    height: 220px;
+  }
+
+  header .logo {
+    padding-top: 15px;
+  }
+
+  header .logo img {
+    height: 30px;
+    margin-top: -1px;
+    margin-left: 10px;
+  }
+
+  header .navi a {
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid #444;
+  }
+
+  header .navi a:last-child {
+    border: none;
+  }
+
+  section .inner {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  section img {
+    width: 100%;
+  }
+
+  section.useage .sub-inner {
+    width: 100%;
+  }
+
+  section.useage .sub-inner div {
+    float: none;
+    width: 100%;
+  }
+
+  section.create p,
+  section.continue p {
+    width: 100%;
+  }
+
+  section.welcome h1 {
+    font-size: 36px;
+    line-height: 1.2em;
+  }
+
+  section h2 {
+    font-size: 26px;
+    line-height: 1.2em;
+  }
+
+  footer .links {
+    display: none;
+  }
+
+  /* Trigger Button */
+
+  .trigger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    color: #fff;
+    top: 8px;
+  }
 }
